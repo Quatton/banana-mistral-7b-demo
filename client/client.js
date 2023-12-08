@@ -4,7 +4,7 @@ const pipeline = require("stream").pipeline;
 
 const options = {
   method: "POST",
-  url: "YOUR_PROJECT_URL",
+  url: process.env.BANANA_PROJECT_URL,
   headers: {
     "Content-Type": "application/json",
     "X-Banana-API-Key": process.env.BANANA_API_KEY,
